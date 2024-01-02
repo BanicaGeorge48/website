@@ -1,0 +1,8 @@
+
+:root{
+    --gray01: #212121;
+}
+
+body {
+    color: var(--gray01);
+}
