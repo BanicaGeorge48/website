@@ -22,14 +22,12 @@
     font-style: italic;
     font-weight: bold;
 }
-
-
-
 :root{
     font-size: 18px;
 
     --gray01: #212121;
     --gray02: #616161;
+    --yellow: #FEC62E;
 
 
 
@@ -38,7 +36,8 @@
 
 body {
     color: var(--gray01);
-    font-family: charter;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: charter; */
 
 
 }
@@ -74,15 +73,46 @@ h1 {
 
 h2{
     font-size: 2em;
+    text-decoration: underline var(--yellow) 4px;
+
 }
 
 h3{
     font-size: 24px;
+    text-decoration: underline var(--yellow) 4px;
+    /* counter-increment: titleList; */
     /* font-size: 1.5em; que es igual al 24px de mas ariba  */
 }
-
-
 
 head{
     font-size: 14px;
 }
+
+pre {
+    background: var(--yellow);
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgba(230, 230, 225, 0.3) , transparent ), url(../images/patron-1.png);
+    height: 200px;
+}
+
+::selection{
+    background: var(--yellow);
+}
+
+.section-content {
+    counter-reset: titleList;
+}
+
+
+.section-content h3{
+    counter-increment: titleList;
+}
+
+.section-content h3::before {
+    content: counter(titleList, upper-roman) ". ";
+    /* color: rgba(236, 131, 12, 0.486); */
+}
+
+
