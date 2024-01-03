@@ -1,20 +1,74 @@
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-italic.otf);
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-bold.otf);
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-bold-italic.otf);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
 
 :root{
+    font-size: 18px;
+
     --gray01: #212121;
+    --gray02: #616161;
+
+
 
 }
 
-html {
-    /* para los parafos(ia es por default) */
-    font-size: 16px; 
-}
 
 body {
     color: var(--gray01);
+    font-family: charter;
+
+
 }
+
+header  {
+    color: var(--gray02);
+}
+
+
+header a {
+    color: var(--gray02);
+    text-decoration: none;
+    
+}
+
+nav details summary {
+    color: var(--gray01);
+    font-weight: bold;
+}
+
+header a:hover {
+    color: var(--gray01);
+    /* font-weight: bold; */
+
+}
+
 
 h1 {
     font-size: 60px;
+    text-decoration: underline;
     /* font-size: 3.75em; es igual a los 60px de arriba */
 }
 
