@@ -78,10 +78,6 @@ h1 {
 
 }
 
-h1 + p {
-    margin-bottom: 64px;
-}
-
 h2{
     margin: 40px 0px 40px;
     font-size: 2em;
@@ -105,7 +101,11 @@ head{
 
 pre {
     background: var(--yellow);
+    padding: 40px;
+    font-family: 'Roboto';
+    line-height: 24px;
 }
+
 
 .hero {
     background-image: linear-gradient(to top, rgba(230, 230, 225, 0.3) , transparent ), url(../images/patron-1.png);
@@ -137,7 +137,14 @@ pre {
 }
 
 blockquote {
+    font-size: 24px;
     margin: 32px 0;
+    border-left: #FEC62E;
+    padding-left: 16px ;
+}
+
+blockquote span {
+    color: var(--gray02);
 }
 
 .section-content + hr{
@@ -150,7 +157,7 @@ blockquote {
 
 
 .section-content h3{
-    counter-increment: titleList;
+    counter-increment: titleList ;
 }
 
 .section-content h3::before {
