@@ -1,0 +1,118 @@
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-italic.otf);
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-bold.otf);
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: charter;
+    src: url(../fonts/charter-bold-italic.otf);
+    font-style: italic;
+    font-weight: bold;
+}
+:root{
+    font-size: 18px;
+
+    --gray01: #212121;
+    --gray02: #616161;
+    --yellow: #FEC62E;
+
+
+
+}
+
+
+body {
+    color: var(--gray01);
+    font-family: 'Roboto', sans-serif;
+    /* font-family: charter; */
+
+
+}
+
+header  {
+    color: var(--gray02);
+}
+
+
+header a {
+    color: var(--gray02);
+    text-decoration: none;
+    
+}
+
+nav details summary {
+    color: var(--gray01);
+    font-weight: bold;
+}
+
+header a:hover {
+    color: var(--gray01);
+    /* font-weight: bold; */
+
+}
+
+
+h1 {
+    font-size: 60px;
+    text-decoration: underline;
+    /* font-size: 3.75em; es igual a los 60px de arriba */
+}
+
+h2{
+    font-size: 2em;
+    text-decoration: underline var(--yellow) 4px;
+
+}
+
+h3{
+    font-size: 24px;
+    text-decoration: underline var(--yellow) 4px;
+    /* counter-increment: titleList; */
+    /* font-size: 1.5em; que es igual al 24px de mas ariba  */
+}
+
+head{
+    font-size: 14px;
+}
+
+pre {
+    background: var(--yellow);
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgba(230, 230, 225, 0.3) , transparent ), url(../images/patron-1.png);
+    height: 200px;
+}
+
+::selection{
+    background: var(--yellow);
+}
+
+.section-content {
+    counter-reset: titleList;
+}
+
+
+.section-content h3{
+    counter-increment: titleList;
+}
+
+.section-content h3::before {
+    content: counter(titleList, upper-roman) ". ";
+    /* color: rgba(236, 131, 12, 0.486); */
+}
+
+
