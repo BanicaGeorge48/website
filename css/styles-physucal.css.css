@@ -72,9 +72,10 @@ hr {
 
 h1 {
     font-size: 60px;
-    text-decoration: underline;
+    text-decoration: underline var(--yellow);
     /* font-size: 3.75em; es igual a los 60px de arriba */
     margin: 64px 10px 16px 20px;
+    /* border-bottom: solid var(--yellow); */
 
 }
 
@@ -139,13 +140,34 @@ pre {
 blockquote {
     font-size: 24px;
     margin: 32px 0;
-    border-left: #FEC62E;
+    border-left: 4px solid var(--yellow);
     padding-left: 16px ;
+    line-height: 24px;
+    
 }
 
 blockquote span {
     color: var(--gray02);
 }
+
+.main{
+    /* border: 1px solid red; */
+    /* background: purple; */
+
+}
+
+.wrapper{
+    width: 902px;
+    margin: auto;
+    /* background: green; */
+    /* padding: 10px; */
+}
+
+.main-content {
+    /* padding: 10px; */
+    /* background: #FEC62E; */
+}
+
 
 .section-content + hr{
     display: none;
