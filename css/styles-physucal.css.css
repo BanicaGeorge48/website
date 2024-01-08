@@ -33,6 +33,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     color: var(--gray01);
@@ -44,7 +48,16 @@ body {
 }
 
 header  {
+    font-size: 14px;
     color: var(--gray02);
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 188px;
+    top: 64px;
+    left: -232px;
+    line-height: 24px;
+
+
 }
 
 
@@ -57,6 +70,7 @@ header a {
 nav details summary {
     color: var(--gray01);
     font-weight: bold;
+    line-height: 24px;
 }
 
 header a:hover {
@@ -75,6 +89,7 @@ h1 {
     text-decoration: underline var(--yellow);
     /* font-size: 3.75em; es igual a los 60px de arriba */
     margin: 64px 10px 16px 20px;
+    font-weight: normal;
     /* border-bottom: solid var(--yellow); */
 
 }
@@ -91,7 +106,10 @@ h3{
     margin: 16px 0px 24px 0px;
     font-size: 24px;
     font-weight: normal;
-    text-decoration: underline var(--yellow) 4px;
+    /* text-decoration: underline var(--yellow) 4px; */
+    position: relative;
+    top: 0;
+    /* background: white; */
     /* counter-increment: titleList; */
     /* font-size: 1.5em; que es igual al 24px de mas ariba  */
 }
@@ -108,6 +126,7 @@ pre {
 }
 
 
+
 .hero {
     background-image: linear-gradient(to top, rgba(230, 230, 225, 0.3) , transparent ), url(../images/patron-1.png);
     height: 200px;
@@ -119,6 +138,7 @@ pre {
 
 .section-content img {
     margin-top: 40px;
+    max-width: 100%;
 }
 
 .section-content ol li{
@@ -150,6 +170,16 @@ blockquote span {
     color: var(--gray02);
 }
 
+.header {
+    position: sticky;
+    top: 0;
+}
+
+.header-content {
+    position: relative;
+
+}
+
 .main{
     /* border: 1px solid red; */
     /* background: purple; */
@@ -164,6 +194,7 @@ blockquote span {
 }
 
 .main-content {
+    /* background: var(--gray02); */
     /* padding: 10px; */
     /* background: #FEC62E; */
 }
@@ -180,11 +211,25 @@ blockquote span {
 
 .section-content h3{
     counter-increment: titleList ;
+    padding-bottom: 2px;
 }
 
 .section-content h3::before {
     content: counter(titleList, upper-roman) ". ";
     /* color: rgba(236, 131, 12, 0.486); */
+}
+
+.section-content h3::after {
+    content: '';
+    width: 20px;
+    height: 4px;
+    background: var(--yellow);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* border: solid 2px firebrick; */
+
 }
 
 
