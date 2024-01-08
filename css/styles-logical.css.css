@@ -27,7 +27,13 @@
 
     --gray01: #212121;
     --gray02: #616161;
+    --gray03: #251f24;
+    --white: #ffffff;
+    --white2: #a5a3a5;
+    --white3: #3a3539;
     --yellow: #FEC62E;
+    --turquoise: #26a0da;
+
 
 
 
@@ -35,51 +41,70 @@
 
 
 body {
-    color: var(--gray01);
-    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    font-family: 'Nunito', sans-serif;
     /* font-family: charter; */
+    background: var(--gray03);
+    margin: 0;
 
 
 }
 
 header  {
-    color: var(--gray02);
+    color: var(--white);
+}
+
+header li {
+    color: var(--white2);
 }
 
 
 header a {
-    color: var(--gray02);
+    color: var(--white2);
     text-decoration: none;
     
 }
 
 nav details summary {
-    color: var(--gray01);
+    color: var(--white);
     font-weight: bold;
 }
 
 header a:hover {
-    color: var(--gray01);
+    color: var(--white);
     /* font-weight: bold; */
 
 }
 
+hr{
+    margin-block: 40px;
+    border-color: var(--turquoise);
+}
 
 h1 {
     font-size: 60px;
-    text-decoration: underline;
+    text-decoration: underline var(--turquoise);
+    font-weight: normal;
+    margin-block-start: 54px;
+    margin-block-end: 16px;
     /* font-size: 3.75em; es igual a los 60px de arriba */
 }
 
 h2{
     font-size: 2em;
-    text-decoration: underline var(--yellow) 4px;
+    /* font-weight: normal; */
+    margin-block: 40px;
+
+    text-decoration: underline var(--turquoise) 4px;
 
 }
 
 h3{
     font-size: 24px;
-    text-decoration: underline var(--yellow) 4px;
+    text-decoration: underline var(--turquoise) 4px;
+    font-weight: normal;
+    margin-block: 16px;
+
     /* counter-increment: titleList; */
     /* font-size: 1.5em; que es igual al 24px de mas ariba  */
 }
@@ -89,13 +114,36 @@ head{
 }
 
 pre {
-    background: var(--yellow);
+    background: var(--white3);
 }
 
+p {
+    color: var(--white2);
+    
+}
+
+
+
+
 .hero {
-    background-image: linear-gradient(to top, rgba(230, 230, 225, 0.3) , transparent ), url(../images/patron-1.png);
+    background-image: linear-gradient(96deg, #314755 30%, #26a0da 102%);
     height: 200px;
 }
+
+.section-content img{
+    margin-block-start: 40px;
+    display: block;
+    max-inline-size: 100%;
+}
+
+blockquote {
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    background-color: var(--white3);
+    border-radius: 8px;
+
+}
+
 
 ::selection{
     background: var(--yellow);
@@ -111,8 +159,18 @@ pre {
 }
 
 .section-content h3::before {
-    content: counter(titleList, upper-roman) ". ";
+    content: counter(titleList, decimal) ". ";
     /* color: rgba(236, 131, 12, 0.486); */
 }
 
+.main{
+    border: solid salmon 2px;
+}
 
+.wrapper{
+
+}
+
+.main-content{
+
+}
