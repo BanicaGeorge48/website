@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: charter;
     src: url(../fonts/charter-regular.otf);
@@ -50,12 +54,31 @@ body {
 
 }
 
+.header {
+    position: sticky;
+    inset-block-start: -30px;
+}
+
+.header-content{
+    position: relative;
+    inset-block-start: 64px;
+
+}
+
 header  {
+    font-size: 14px;
     color: var(--white);
+    
+    position: absolute;
+    /* inset-block-start: 64px; */
+    inset-inline-start: -208px;
+
+    inline-size: 188px;
 }
 
 header li {
     color: var(--white2);
+    margin-block-end: 16px;
 }
 
 
@@ -192,4 +215,42 @@ blockquote p {
 .main-content{
     padding-inline: 16px;
 
+}
+
+.slider {
+    /* border: 1px solid red; */
+}
+
+.slider-container {
+    display: block;
+    /* block-size: 100px; */
+    overflow: auto;
+    scroll-behavior: smooth;
+
+    white-space: nowrap;
+    /* border: 1px solid purple; */
+}
+
+.video {
+    margin: 0;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+    text-align: center;
+    margin: 10px;
+    /* font-size: 50px; */
+}
+
+
+.slider-bullet {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    border-radius: 100%;
+    background: var(--white);
 }
