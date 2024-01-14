@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="./css/styles-logical.css.css">
+    <link rel="stylesheet" href="./css/styles-logical-c.css.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,78 +12,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>website</title>
 <body>
-    
-    <div class="hero"></div>
 
-    <div class="aside">
-        <div class="wrapper">
-            <div class="header-content">
-                <aside>
-                    <nav class="project-nav">            
-                        <details open>
-                            <summary>
-                                Variantes del proyecto 
-                            </summary>
-                                <ol>
-                                    <li><a href="index.html" class="current">Variante A</a></li>
-                                    <li><a href="varianteB.html">Variante B</a></li>
-                                    <li><a href="varianteC.html">Variante C</a></li>
-                                    <li><a href="varianteD.html">Variante D</a></li>
-                                    <li><a href="varianteE.html">Variante E</a></li>
-                                </ol>
-                        </details>
-                    </nav>
-                </aside>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="header">
-        <div class="wrapper">
-            <div class="header-content">
-                <header>
-                    <nav>            
-                        <details>
-                            <summary>
-                                Setup
-                            </summary>
-                                <ol>
-                                    <li><a href="#Google-Chrome">Google Chrome</a></li>
-                                    <li><a href="#Visual-studio-code">Visual studio code</a></li>
-                                    <li><a href="#Figma">Figma</a></li>
-                                    <li><a href="#Github">Github</a></li>
-                                </ol>
-                        </details>
-                    
-                        <details>
-                            <summary>
-                                Conceptos esenciales del Desarrollo web
-                            </summary>
-                                <ol>
-                                    <li><a href="#Que-es-HTML">Que es HTML</a></li>
-                                    <li><a href="#Etiquetas">Etiquetas</a></li>
-                                    <li><a href="#DOM">DOM</a></li>
-                                    <li><a href="#Semántica">Semántica</a></li>
-                                    <li><a href="#Atributos">Atributos</a></li>
-                                    <li><a href="#Que-es-CSS">Que es CSS</a></li>
-                                </ol>
-                        </details>
-                    </nav>
-                </header>
-            </div>
-        </div>
-    </div>
+ <!-- <div class="hero"></div> -->
 
 
     <main class="main">
         <div class="wrapper">
             <div class="main-content">
 
-                <h1>Curso esencial de HTML y CSS 🌼</h1>
+                <h1>Curso esencial de HTML y CSS</h1>
                 <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
+
+                <div class="aside">
+                    <div class="wrapper">
+                        <div class="header-content">
+                            <aside>
+                                <nav class="project-nav">            
+                                    <summary>
+                                        Variantes del proyecto 
+                                    </summary>
+                                        <ol>
+                                            <li><a href="index.html">Variante A</a></li>
+                                            <li><a href="varianteB.html">Variante B</a></li>
+                                            <li><a href="varianteC.html" class="current">Variante C</a></li>
+                                            <li><a href="varianteD.html">Variante D</a></li>
+                                            <li><a href="varianteE.html">Variante E</a></li>
+                                        </ol>
+                                </nav>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="header">
+                    <div class="wrapper">
+                        <div class="header-content">
+                            <header>
+                                <p>CONTENIDO</p>
+                                <nav>      
+                                    <summary>
+                                        Setup
+                                    </summary>     
+                                        <ol>
+                                            <li><a href="#Google-Chrome">Google Chrome</a></li>
+                                            <li><a href="#Visual-studio-code">Visual studio code</a></li>
+                                            <li><a href="#Figma">Figma</a></li>
+                                            <li><a href="#Github">Github</a></li>
+                                        </ol>
+
+                                    <summary>
+                                        Conceptos esenciales del Desarrollo web
+                                    </summary>
+                                        <ol>
+                                            <li><a href="#Que-es-HTML">Que es HTML</a></li>
+                                            <li><a href="#Etiquetas">Etiquetas</a></li>
+                                            <li><a href="#DOM">DOM</a></li>
+                                            <li><a href="#Semántica">Semántica</a></li>
+                                            <li><a href="#Atributos">Atributos</a></li>
+                                            <li><a href="#Que-es-CSS">Que es CSS</a></li>
+                                        </ol>
+                                
+                                </nav>
+                        
+                            </header>
+                            
+                        </div>
+                    </div>
+                </div>
+            
                 <hr>
-        
+
                 <section class="section-content">
                     
                     <h2>Setup</h2>
@@ -215,6 +214,7 @@
                     <div class="section-content">
                         <form action="#" class="form">
                             <h2>formurario</h2>
+
                             <input type="date" required placeholder="Nombre">
                             <input type="text" required placeholder="Nombre">
                             <input type="email" required placeholder="Correo Electronico">

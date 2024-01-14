@@ -39,7 +39,7 @@ html {
 
 
 body {
-    color: var(--gray0);
+    color: var(--gray01);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     /* font-family: charter; */
@@ -48,13 +48,14 @@ body {
 }
 
 header  {
+    /* border: 1px solid firebrick; */
     font-size: 14px;
     color: var(--gray02);
     /* border: 1px solid red; */
     position: absolute;
-    width: 188px;
-    top: 64px;
-    left: -232px;
+    width: 288px;
+    top: 274px;
+    left: 920px;
     line-height: 24px;
     /* border: 2px solid aqua; */
 
@@ -64,17 +65,32 @@ header  {
 header a {
     color: var(--gray02);
     text-decoration: none;
-    
+    /* border: 1px solid salmon; */
+    /* padding-inline-end: 100px; */
+ 
+}
+
+header li {
+    padding-inline-end: 100px;
+    /* border: 1px  solid saddlebrown; */
+}
+
+header li:hover{
+    padding-inline-end: 80px;
+    background-color: #212121;
+
 }
 
 nav details summary {
     color: var(--gray01);
     font-weight: bold;
     line-height: 24px;
+    
 }
 
 header a:hover {
-    color: var(--gray01);
+    background-color: var(--gray01);
+    color: aliceblue;
     font-weight: bold;
 
 }
@@ -128,7 +144,7 @@ pre {
 
 
 .hero {
-    background-image: linear-gradient(to top, rgba(230, 230, 225, 0.3) , transparent ), url(../images/patron-1.png);
+    background-image: linear-gradient(to top, rgba(142, 45, 226, 0.5) , rgba(74, 0, 224, 0.6) ), url(../images/patron-2.png);
     height: 350px;
 }
 
@@ -257,7 +273,7 @@ aside {
     color: var(--gray02);
     /* border: 1px solid red; */
     position: absolute;
-    width: 188px;
+    width: 288px;
     top: 64px;
     left: 920px;
     line-height: 24px;
@@ -267,7 +283,9 @@ aside {
 
 
 aside a{
-    background: var(--turquoise);
+    /* background: var(--turquoise); */
+    /* border: 1px solid cadetblue; */
+    padding-inline-end: 100px;
     color: var(--gray01);
     font-size: 16px;
     text-decoration: none;
@@ -357,14 +375,19 @@ aside a{
 
 
 .current{
-    background-color: #FEC62E;
+    background-color: var(--gray01);
+    color: aliceblue;
     font-weight: bold;
 }
 
-nav.project-nav details ol { 
+nav.project-nav ol { 
     list-style-type: none;
+    text-align: left;
 }
 
-
+nav.project-nav summary {
+    text-align: center;
+    font-weight: bold;
+}
 
 
