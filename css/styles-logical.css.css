@@ -101,6 +101,8 @@ h1 {
 }
 
 h2{
+    text-align: center;
+
     margin: 40px 0px 40px;
     font-size: 2em;
     font-weight: normal;
@@ -190,7 +192,7 @@ blockquote span {
 }
 
 .main{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* background: purple; */
     /* max-width: 100%; */
 

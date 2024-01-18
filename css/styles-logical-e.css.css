@@ -38,9 +38,6 @@ html{
     --yellow: #FEC62E;
     --turquoise: #26a0da;
 
-
-
-
 }
 
 
@@ -55,30 +52,29 @@ body {
 }
 
 .header {
-    position: sticky;
-    inset-block-start: 15px;
+    /* position: sticky; */
+    /* inset-block-start: 15px; */
 }
 
 .header-content{
     position: relative;
-    inset-block-start: 64px;
+    /* inset-block-start: 64px; */
+    
 
 }
 
 header  {
     font-size: 14px;
     color: var(--white);
-    
-    position: absolute;
-    /* inset-block-start: 64px; */
-    inset-inline-start: -208px;
-
+    /* position: absolute; */
+    /* inset-inline-start: -208px; */
     inline-size: 188px;
 }
 
 header li {
     color: var(--white2);
     margin-block-end: 16px;
+    /* background-color: #26a0da; */
 }
 
 
@@ -116,6 +112,7 @@ h1 {
 }
 
 h2{
+    text-align: center;
     font-size: 2em;
     /* font-weight: normal; */
     margin-block: 40px;
@@ -159,12 +156,12 @@ p {
 
 
 .hero {
-    position: fixed;
+    /* position: fixed; */
     /* z-index: -1; */
+    block-size: 100px;
+
     background-image: linear-gradient(96deg, #314755 30%, #26a0da 102%);
-    height: 70px;
-    width: 100%;
-    top: 0px;
+
 
     /* inset-block-start: 64px; */
     
@@ -297,11 +294,13 @@ blockquote p {
 }
 
 aside {
-    position: fixed;
+    position: absolute;
+    /* max-inline-size: 902px; */
+    margin: auto;
     left: 50%;
-    top: 1px;
+    /* top: 1px; */
     transform: translate(-50%, 0%);
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 aside .wrapper-container{
@@ -318,30 +317,30 @@ aside a{
     text-decoration: none;
     font-weight: bold;
     
-    margin-inline: 10px;
-    padding-inline: 10px;
-
-    /* display: flex; */
-
-
-
-    /* padding: 0px; */
-    /* margin-inline: 10px; */
-
-    /* max-inline-size: 100%; */
-    /* position: relative; */
-    /* width: 500px; */
-    /* inset-inline-start: 50%; */
-    /* max-block-size: 10%; */
-    /* display: ; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: -5px 5px 10px 0px rgb(0, 255, 255);
+    padding-inline: 30px;
+    /* padding: auto; */
+    /* content: center ; */
     
 
 }
 
+aside a:hover {
+    /* color: var(--gray01); */
+    background: rgb(121, 199, 235);
+
+    font-weight: bold;
+    box-shadow: -10px 10px 30px 0px rgb(0, 255, 255);
+
+
+}
+
 aside h3  {
-    /* border: 1px solid blue ; */
+    inline-size: 300px;
+    color: var(--gray01);
+    font-weight: bold;
     text-align: center;
     margin-block-start: 4px;
     margin-block-end: 5px;
@@ -349,6 +348,100 @@ aside h3  {
 }
 
 .current{
-    background-color: #FEC62E;
+    background-color: rgb(121, 199, 235);
+    /* box-shadow: -10px 10px 40px 0px rgb(0, 255, 255); */
     font-weight: bold;
+}
+
+
+@media screen and (min-width: 1366px) {
+
+    .hero {
+        /* background-image: linear-gradient(to top, rgba(230, 230, 225, 0.3) , transparent ), url(../images/patron-1.png); */
+        block-size: 100px;
+
+    
+        /* position: fixed; */
+        /* z-index: -1; */
+        background-image: linear-gradient(96deg, #314755 30%, #26a0da 102%);
+        /* height: 70px; */
+        /* width: 100%; */
+        /* top: 0px; */
+    
+        /* inset-block-start: 64px; */
+        
+    
+        
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+    }
+    
+    .header-content {
+        position: relative;
+        padding-inline: 0;
+    }
+    
+    header  {
+        font-size: 14px;
+        color: var(--gray02);
+        position: absolute;
+        width: 188px;
+        top: 64px;
+        left: -232px;
+        line-height: 24px;
+    
+    }
+    .aside {
+        /* position: sticky; */
+        /* inset-block-start: 15px; */
+        
+    }
+    
+    .aside-content{
+        /* position: relative; */
+        /* inset-block-start: 64px; */
+        /* border: 2px solid aqua; */
+        /* width: 300px; */
+    
+    }
+    
+    aside {
+        position: absolute;
+        max-inline-size: 902px;
+        margin: auto;
+        left: 50%;
+        /* top: 1px; */
+        transform: translate(-50%, 0%);
+        /* z-index: 2; */
+    
+    }
+    
+    aside h3 {
+        /* border: 1px solid saddlebrown; */
+        padding-inline: 300px;
+        /* content: 1000px; */
+        
+    }
+
+    aside a{
+        background: var(--turquoise);
+        color: var(--gray01);
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+    
+    }
+
+    h1 {
+        font-size: 55px;
+        /* text-decoration: underline var(--yellow); */
+        /* font-size: 3.75em; es igual a los 60px de arriba */
+        margin: 64px 10px 16px 20px;
+        font-weight: normal;
+        /* border-bottom: solid var(--yellow); */
+    
+    }
 }

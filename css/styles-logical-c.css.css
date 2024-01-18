@@ -317,6 +317,13 @@ aside a{
 
 }
 
+aside a:hover {
+    color: var(--white);
+    background: #212121;
+    /* font-weight: bold; */
+
+}
+
 nav.project-nav ol { 
     list-style-type: none;
     /* text-decoration: none; */
@@ -328,3 +335,4 @@ nav.project-nav ol {
     color: var(--white);
     font-weight: bold;
 }
+
