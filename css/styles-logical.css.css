@@ -35,6 +35,7 @@
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 
@@ -43,19 +44,23 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     /* font-family: charter; */
+    max-width: 100%; 
+    
 
 
 }
 
 header  {
+    margin-block-start: 20px;
+    /* margin-block-end: ; */
     font-size: 14px;
     color: var(--gray02);
     /* border: 1px solid red; */
-    position: absolute;
-    width: 188px;
-    top: 64px;
-    left: -232px;
-    line-height: 24px;
+    /* position: absolute; */
+    /* width: 188px; */
+    /* top: 64px; */
+    /* left: -232px; */
+    /* line-height: 24px; */
     /* border: 2px solid aqua; */
 
 }
@@ -79,16 +84,17 @@ header a:hover {
 
 }
 
+
 hr {
     margin: 64px 0px;
     border-color: var(--yellow);
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 40px;
     text-decoration: underline var(--yellow);
     /* font-size: 3.75em; es igual a los 60px de arriba */
-    margin: 64px 10px 16px 20px;
+    margin: 20px 10px 16px 10px;
     font-weight: normal;
     /* border-bottom: solid var(--yellow); */
 
@@ -119,6 +125,8 @@ head{
 }
 
 pre {
+    overflow: auto;
+
     background: var(--yellow);
     padding: 40px;
     font-family: 'Roboto';
@@ -129,7 +137,7 @@ pre {
 
 .hero {
     background-image: linear-gradient(to top, rgba(230, 230, 225, 0.3) , transparent ), url(../images/patron-1.png);
-    height: 350px;
+    block-size: 50px;
 }
 
 ::selection{
@@ -171,32 +179,30 @@ blockquote span {
 }
 
 .header {
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
 }
 
 .header-content {
-    position: relative;
+    padding-inline: 20px;
+    /* position: relative; */
 
 }
 
 .main{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     /* background: purple; */
+    /* max-width: 100%; */
 
 }
 
-.wrapper{
-    width: 902px;
-    margin: auto;
-    /* background: green; */
-    /* padding: 10px; */
-}
 
 .main-content {
     /* background: var(--gray02); */
     /* padding: 10px; */
     /* background: #FEC62E; */
+    /* max-width: 100%; */
+
 }
 
 
@@ -233,45 +239,48 @@ blockquote span {
 }
 
 .aside {
-    position: sticky;
-    inset-block-start: 15px;
+    margin-block-start: 20px;
+
+    /* position: sticky; */
+    /* inset-block-start: 15px; */
 }
 
 .aside-content{
-    position: relative;
-    inset-block-start: 64px;
+    /* position: relative; */
+    /* inset-block-start: 64px; */
     /* border: 2px solid aqua; */
     /* width: 300px; */
 
 }
 
-/* .aside-wrapper{
-    width: 100%;
-    margin: auto;
-    background: green;
-    
-} */
-
 aside {
     font-size: 14px;
     color: var(--gray02);
     /* border: 1px solid red; */
-    position: absolute;
-    width: 188px;
-    top: 64px;
-    left: 920px;
-    line-height: 24px;
+    /* position: absolute; */
+    /* width: 188px; */
+    /* top: 64px; */
+    /* left: 920px; */
+    /* line-height: 24px; */
     /* border: 2px solid rgb(255, 0, 0); */
 
 }
 
 
 aside a{
-    background: var(--turquoise);
+    /* background: var(--yellow); */
     color: var(--gray01);
     font-size: 16px;
     text-decoration: none;
     font-weight: bold;
+    /* width: 1000px; */
+
+}
+
+aside a:hover {
+    color: var(--gray01);
+    background-color: #FEC62E;
+    /* font-weight: normal; */
 
 }
 
@@ -288,7 +297,7 @@ aside a{
 
 .main-content{
     padding-inline: 16px;
-    padding-block-start: 50px;
+    /* padding-block-start: 50px; */
 
 }
 
@@ -366,5 +375,75 @@ nav.project-nav details ol {
 }
 
 
+@media screen and (min-width: 1366px) {
+    .hero {
+        background-image: linear-gradient(to top, rgba(230, 230, 225, 0.3) , transparent ), url(../images/patron-1.png);
+        block-size: 350px;
+    }
 
+    .header {
+        position: sticky;
+        top: 0;
+    }
+    
+    .header-content {
+        position: relative;
+        padding-inline: 0;
+    }
+    
+    header  {
+        font-size: 14px;
+        color: var(--gray02);
+        position: absolute;
+        width: 188px;
+        top: 64px;
+        left: -232px;
+        line-height: 24px;
+    
+    }
+    .aside {
+        position: sticky;
+        inset-block-start: 15px;
+    }
+    
+    .aside-content{
+        position: relative;
+        inset-block-start: 64px;
+        /* border: 2px solid aqua; */
+        /* width: 300px; */
+    
+    }
+    
+    aside {
+        font-size: 14px;
+        color: var(--gray02);
+        /* border: 1px solid red; */
+        position: absolute;
+        width: 188px;
+        top: 64px;
+        left: 920px;
+        line-height: 24px;
+        /* border: 2px solid rgb(255, 0, 0); */
+    
+    }
+    
+    
+    aside a{
+        background: var(--turquoise);
+        color: var(--gray01);
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+    
+    }
 
+    h1 {
+        font-size: 55px;
+        text-decoration: underline var(--yellow);
+        /* font-size: 3.75em; es igual a los 60px de arriba */
+        margin: 64px 10px 16px 20px;
+        font-weight: normal;
+        /* border-bottom: solid var(--yellow); */
+    
+    }
+}

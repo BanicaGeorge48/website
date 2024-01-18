@@ -38,9 +38,6 @@ html{
     --yellow: #FEC62E;
     --turquoise: #26a0da;
 
-
-
-
 }
 
 
@@ -55,24 +52,22 @@ body {
 }
 
 .header {
-    position: sticky;
-    inset-block-start: 15px;
+    /* position: sticky; */
+    /* inset-block-start: 15px; */
 }
 
 .header-content{
     position: relative;
-    inset-block-start: 64px;
+    /* inset-block-start: 64px; */
+    
 
 }
 
 header  {
     font-size: 14px;
     color: var(--white);
-    
-    position: absolute;
-    /* inset-block-start: 64px; */
-    inset-inline-start: -208px;
-
+    /* position: absolute; */
+    /* inset-inline-start: -208px; */
     inline-size: 188px;
 }
 
@@ -335,4 +330,28 @@ aside h3  {
 .current{
     background-color: rgb(121, 199, 235);
     font-weight: bold;
+}
+
+@media screen and (min-width: 1366px) {
+         
+    .header {
+        position: sticky;
+        inset-block-start: 15px;
+    }
+
+    .header-content{
+        position: relative;
+        inset-block-start: 64px;
+
+    }
+
+    header  {
+        font-size: 14px;
+        color: var(--white);
+        position: absolute;
+        inset-inline-start: -208px;
+
+        inline-size: 188px;
+    }
+        
 }
